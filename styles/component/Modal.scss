@@ -1,0 +1,47 @@
+.modal
+{
+  &_backgroud
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.375);
+  }
+  
+  &_content
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 6px;
+
+    h2,p
+    {
+      margin-top: 0;
+    }
+
+    button
+    {
+      padding: 10px 16px;
+      border: none;
+      outline: none;
+      background-color: maroon;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      
+      &:hover
+      {
+        opacity: .5;
+      }
+    }
+  }
+}
